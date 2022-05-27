@@ -4,29 +4,30 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web-studio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <title>Web-studio</title>
+
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body class="body">
     <!-- Шапка портфолио -->
     <header class="header">
       <nav class="header-nav">
-        <a href="./index.html" class="header-link-logo">
-          <span class="header-logo-web">Web</span>
-          <span class="header-logo-studio">studio</span></a
+        <a href="./index.html" class="header-logo-nav"
+          ><span class="header-logo-web">Web</span
+          ><span class="header-logo-studio">Studio</span></a
         >
         <ul class="header-list">
           <li class="header-item">
             <a href="./index.html" class="header-link">Студия</a>
           </li>
           <li class="header-item">
-            <a href="" class="header-link">Портфолио</a>
+            <a href="" class="header-link current">Портфолио</a>
           </li>
           <li class="header-item">
             <a href="" class="header-link">Контакты</a>
@@ -47,29 +48,27 @@
       </ul>
     </header>
     <!-- Категории портфолио -->
-    <section class="section-category">
-      <h1 style="display: none">Категории портфолио</h1>
-      <ul class="categories-list">
-        <li class="category-item">
-          <button type="button" class="category-btn">Все</button>
-        </li>
-        <li class="category-item">
-          <button type="button" class="category-btn">Веб-сайты</button>
-        </li>
-        <li class="category-item">
-          <button type="button" class="category-btn">Приложения</button>
-        </li>
-        <li class="category-item">
-          <button type="button" class="category-btn">Дизайн</button>
-        </li>
-        <li class="category-item">
-          <button type="button" class="category-btn">Маркетинг</button>
-        </li>
-      </ul>
-    </section>
-    <!-- Категория "Все" -->
-    <main class="main-portfolio">
-      <section class="section-scroll">
+    <main>
+      <section class="section-category">
+        <h1 style="display: none">Категории портфолио</h1>
+        <ul class="categories-list">
+          <li class="category-item">
+            <button type="button" class="category-btn">Все</button>
+          </li>
+          <li class="category-item">
+            <button type="button" class="category-btn">Веб-сайты</button>
+          </li>
+          <li class="category-item">
+            <button type="button" class="category-btn">Приложения</button>
+          </li>
+          <li class="category-item">
+            <button type="button" class="category-btn">Дизайн</button>
+          </li>
+          <li class="category-item">
+            <button type="button" class="category-btn">Маркетинг</button>
+          </li>
+        </ul>
+        <!-- Категория "Все" -->
         <ul class="scroll-list">
           <li class="scroll-item">
             <img
@@ -146,12 +145,11 @@
     <!-- Футер страницы -->
     <footer class="footer">
       <section class="footer-section">
-        <h2 class="footer-caption">
-          <a href="./index.html">
-            <span class="footer-caption-web">Web</span>
-            <span class="footer-caption-studio">studio</span>
-          </a>
-        </h2>
+        <h2 style="display: none">Футер</h2>
+        <a href="./index.html" class="header-logo-nav">
+          <span class="footer-logo-web">Web</span
+          ><span class="footer-logo-studio">Studio</span>
+        </a>
         <address class="footer-address">
           <ul class="footer-list">
             <li class="footer-item">
