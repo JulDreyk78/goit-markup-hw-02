@@ -1,6 +1,19 @@
 :root {
     --brand-color: #212121;
 }
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    margin: 0;
+}
+ul{
+    margin:0;
+    padding-left: 0;
+}
 ol,
 li {
     list-style: none;
@@ -9,41 +22,78 @@ li {
     font-family: 'Roboto', sans-serif, Arial;
     color: #757575;
 }
+
 /* ----------------------header-------------------- */
+    .header-line {
+    border-bottom: 1px solid #ECECEC;
+    left: 0px;
+    top: 0px;
+    }
+    .header{
+    background-color: #FFFFFF;
+    }
     .header-logo-nav{
     text-decoration: none;
+    color: var(--brand-color);
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
 }
     .header-logo-web{   
     color: #2196F3;
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.1;
-    letter-spacing: 0.03em;
 }
     .header-logo-studio{
-    color: #212121;
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.1;
-    letter-spacing: 0.03em;
+    color: var(--brand-color)
 }
-
-
+.container {
+    /* outline: 2px solid green; */
+    margin: 0 auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+.header-title{
+    display: flex;
+}
+.header-list{
+    display: flex;
+    margin-left: 93px;
+    align-items: center;
+}
+.header-item:not(:last-child){
+    margin-right: 50px;
+}
+.header-link-cnct{
+    margin-left: auto;
+}
+.header-list-connect{
+    display: flex;
+}
+.header .container{
+    display: flex;
+    align-items: center;
+}
 .header-link {
     font-weight: 500;
     color: var(--brand-color);
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.02em;
-    text-decoration: none;}
+    text-decoration: none;
+};
 .header-link:hover,
 .header-link:focus {
     color: #2196F3;
 }
 .header-list .header-link.current {
     color: #2196F3;
+}
+.header-item-connection:not(:last-child){
+    padding-right: 50px;
 }
 .header-link-mail {
     color: #757575;
@@ -62,12 +112,22 @@ li {
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.02em;
-    text-decoration: none;}
+    text-decoration: none;
+    margin: 0;
+}
 .header-link-tel:hover,
 .header-link-tel:focus {
     color: #2196F3;
 }
 /* ----------------------hero------------------- */
+.flex {
+    padding: 200px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #2F303A;
+}
 .hero{
     background-color: #2F303A;
 }
@@ -78,11 +138,13 @@ li {
     line-height: 1.4;
     letter-spacing: 0.06em;
     text-align: center;
+    text-transform: uppercase;
+    max-width: 695px;
 }
 .hero-btn{
     color: #FFFFFF;
     background-color: #2196F3;
-    width: 200px;
+    min-width: 200px;
     height: 50px;
     font-weight: 700;
     font-size: 16px;
@@ -91,26 +153,56 @@ li {
     letter-spacing: 0.06em;
     display: flex;
     font-family: inherit;
+    padding: 10px 32px;
+    border: 1px transparent;
+    border-radius: 4px;
+    margin-top: 30px;
 }
 .hero-btn:hover,
 .hero-btn:focus{
-    background-color: #188CE8; 
+    background-color: #188CE8;
 }
 /* ------------------контент------------------------- */
+.container.content{
+    padding-top: 94px;
+    padding-bottom: 94px;
+    } 
+.content-item:not(:last-child){
+    padding-right: 30px;
+}
+
+.content-list{
+    display: flex;
+    justify-content: space-between;
+}
 .content-caption{
     color: var(--brand-color);
     font-weight: 700;
     font-size: 14px;
     line-height: 1.0;
     letter-spacing: 0.03em;
+    text-transform: uppercase;
+    padding-bottom: 10px;
 }
 .content-text{
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
+    max-width: 270px;
 }
 /* ----------------Род занятий--------------------------- */
+.container.employment{
+    padding-top: 0px;
+    padding-bottom: 188px;
+}
+.employment-list{
+    display: flex;
+    justify-content: space-between;
+}
+.employment-item:not(:last-child){
+    padding-right: 30px;
+}
 .employment-caption{
     color: var(--brand-color);
     font-weight: 700;
@@ -118,8 +210,13 @@ li {
     line-height: 1.1;
     letter-spacing: 0.03em;
     text-align: center;
+    padding-bottom: 50px;
 }
 /* ------------------Наша команда------------------- */
+.container.team{
+    padding-top: 0;
+    padding-bottom: 0;
+}
 .team{
     background-color: #F5F4FA;
 }
@@ -130,6 +227,24 @@ li {
     line-height: 1.1;
     letter-spacing: 0.03em;
     text-align: center;
+    padding-bottom: 50px;
+    padding-top: 0;
+}
+.team-list{
+    display: flex;
+    justify-content: space-between;
+}
+.team-item:not(:last-child){
+    margin-right: 30px;
+}
+.team-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    margin-bottom: 94px;
+    border-radius: 0px 0px 4px 4px;
+    background-color: #FFFFFF;
 }
 .team-name{
     color: var(--brand-color);
@@ -137,35 +252,48 @@ li {
     font-size: 16px;
     line-height: 1.1;
     letter-spacing: 0.03em;
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
 .team-text{
     font-weight: 400;
     font-size: 16px;
     line-height: 1.1;
     letter-spacing: 0.03em;
+    padding-bottom: 30px;
 }
 /* ---------------------Футер------------------- */
+.container.footers{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
 .footer-logo-nav{
     text-decoration: none;
+    color: var(--brand-color);
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    padding-bottom: 20px;
 }
 .footer{
     background-color: #2F303A;
 }
+.footer-caption{
+    padding-bottom: 20px;
+}
 .footer-logo-web {
     color: #2196F3;
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.1;
-    letter-spacing: 0.03em;
 }
 .footer-logo-studio{
     color: #FFFFFF;
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.1;
-    letter-spacing: 0.03em;
+}
+.footer-item:not(:last-child){
+padding-bottom: 9px;
 }
 .adds{
     color: #FFFFFF;
@@ -204,7 +332,16 @@ li {
     color: #2196F3;
 }
 /* -------------------Портфолио--------------------- 🤠 */
-
+.category{
+    display: flex;
+    justify-content: center;
+}
+.category-item:not(:last-child){
+    margin-right: 8px;
+}
+.category-section{
+    padding-top: 94px;
+}
 .category-btn{
     color: var(--brand-color);
     background-color: #F5F4FA;
@@ -214,11 +351,24 @@ li {
     line-height: 1.6;
     font-family: inherit;
     display: flex;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;   
+    border: 1px transparent;
 }
 .category-btn:hover,
 .category-btn:focus  {
     color: #FFFFFF;
     background-color: #2196F3;
+}
+.scroll-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+}
+.scroll-item{
+    width: calc(100% / 3 - 30px);
+    margin: 15px;
+    border: 1px solid #EEEEEE;
 }
 .scroll-caption{
     color: var(--brand-color);
@@ -226,10 +376,13 @@ li {
     font-size: 18px;
     line-height: 2;
     text-decoration: none;
+    margin:20px 24px 4px 24px;
 }
 .scroll-text{
     font-weight: 400;
     font-size: 16px;
     line-height: 1.8;
     text-decoration: none;
+    margin: 0 24px 20px;
 }
+
