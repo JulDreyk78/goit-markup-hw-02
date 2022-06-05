@@ -53,7 +53,6 @@ li {
     color: var(--brand-color)
 }
 .container {
-    /* outline: 2px solid green; */
     margin: 0 auto;
     width: 1200px;
     padding-left: 15px;
@@ -72,8 +71,8 @@ li {
     color: #2196F3;
 }
 
-.header-item:not(:last-child){
-    margin-right: 50px;
+.header-list .header-item{
+    margin-left: 50px;
 }
 .header-link-cnct{
     margin-left: auto;
@@ -171,10 +170,11 @@ li {
     background-color: #188CE8;
 }
 /* ------------------контент------------------------- */
-.container.content{
+.content{
     padding-top: 94px;
     padding-bottom: 94px;
-    } 
+}
+
 .content-item:not(:last-child){
     margin-right: 30px;
 }
@@ -200,9 +200,8 @@ li {
     max-width: 270px;
 }
 /* ----------------Род занятий--------------------------- */
-.container.employment{
-    padding-top: 0px;
-    padding-bottom: 188px;
+.employment{
+    padding-bottom: 94px;
 }
 .employment-list{
     display: flex;
@@ -232,6 +231,8 @@ li {
 }
 .team{
     background-color: #F5F4FA;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 .team-caption{
     color: var(--brand-color);
@@ -253,7 +254,6 @@ li {
 .team-item{
     text-align: center;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    margin-bottom: 94px;
     border-radius: 0px 0px 4px 4px;
     background-color: #FFFFFF;
 }
@@ -275,8 +275,6 @@ li {
 }
 /* ---------------------Футер------------------- */
 .container.footers{
-    padding-top: 60px;
-    padding-bottom: 60px;
     display: flex;
     flex-direction: column;
 }
@@ -293,6 +291,8 @@ li {
 }
 .footer{
     background-color: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .footer-logo-web {
     color: #2196F3;
@@ -350,7 +350,7 @@ margin-bottom: 50px;
 .category-item:not(:last-child){
     margin-right: 8px;
 }
-.category-section{
+.section-category{
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -383,6 +383,7 @@ margin-bottom: 50px;
 .scroll-item{
     width: calc(100% / 3 - 30px);
     margin: 15px;
+    border-bottom: 1px solid #EEEEEE;
 }
 .scroll-caption{
     color: var(--brand-color);
@@ -399,7 +400,4 @@ margin-bottom: 50px;
 }
 .text{
     padding: 20px 24px;
-    border-right: 1px solid #EEEEEE;
-    border-bottom: 1px solid #EEEEEE;
-    border-left: 1px solid #EEEEEE;
 }
